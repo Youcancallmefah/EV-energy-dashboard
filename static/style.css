@@ -7,7 +7,7 @@
 /* ── Variables ──────────────────────────────────────── */
 :root {
   /* Core palette */
-  --bg:           #0f172a;
+  --bg:           #ffffff;/*#0f172a*/
   --bg-2:         #131e35;
   --bg-panel:     #162032;
   --bg-panel-alt: #1a2840;
