@@ -142,10 +142,10 @@ def health():
 
 # ── Entry Point ────────────────────────────────────────────
 
-if __name__ == "__main__":
-    init_db()
-    count = len(generate_energy_data())
-    print(f"🚀 EV Power Analytics API  →  http://127.0.0.1:5000")
-    print(f"📊 Dataset: {START_DATE} → today ({count} records)")
-    app.run(debug=True, port=5000)
+import os
 
+if __name__ == "__main__":
+    # ดึงค่า Port ที่ Render กำหนดให้ ถ้าไม่มีให้ใช้ 5000 เป็นค่าเริ่มต้น
+    port = int(os.environ.get("PORT", 5000))
+    # สำคัญมาก: host ต้องเป็น '0.0.0.0' เพื่อให้โลกภายนอกเข้าถึงได้
+    app.run(host='0.0.0.0', port=port)
