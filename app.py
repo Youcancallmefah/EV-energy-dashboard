@@ -134,12 +134,12 @@ def health():
     """Quick health-check — useful for debugging."""
     return jsonify({
         "status":    "ok",
-        "message":   "EV Power Analytics API is running",
+        "message":   "Mefah's Dashboard API is ready!",
         "records":   len(generate_energy_data()),
         "threshold": HIGH_THRESHOLD
     })
 
-# --- เพิ่มโค้ด 3 บรรทัดนี้ลงไปตรงนี้เลยครับ ---
+#-----Route สำหรับแสดงหน้า Dashboard index.html---
 @app.route("/")
 def index():
     """Route สำหรับแสดงหน้า Dashboard (index.html)"""
