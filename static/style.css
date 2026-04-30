@@ -9,8 +9,8 @@
   /* Core palette */
   --bg:           #ffffff;/*#0f172a*/
   --bg-2:         #131e35;
-  --bg-panel:     #162032;
-  --bg-panel-alt: #1a2840;
+  --bg-panel:     #f1f5f9;
+  --bg-panel-alt: #d8dce0;
   --border:       rgba(255,255,255,0.07);
   --border-hover: rgba(255,255,255,0.13);
 
@@ -25,7 +25,7 @@
   --amber-dim:    rgba(251, 191, 36, 0.12);
 
   /* Text */
-  --txt-hi:       #e2e8f0;
+  --txt-hi:       #1e293b;
   --txt-mid:      #94a3b8;
   --txt-lo:       #475569;
 
@@ -60,7 +60,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 200;
-  background: rgba(15, 23, 42, 0.88);
+  background: rgba(208, 210, 215, 0.88);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
 }
