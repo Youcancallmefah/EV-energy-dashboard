@@ -11,14 +11,14 @@ Copy
 :root {
   /* Core backgrounds */
   --bg:           #ffffff;          /* page background — cool light grey */
-  --bg-2:         #e5e5e5;
-  --bg-panel:     #fcfcfc;          /* card/panel background — pure white */
-  --bg-panel-alt: #b2b2b2;          /* inner card / table row alt */
-  --bg-header:    #999999;
+  --bg-2:         #f1f5f9;
+  --bg-panel:     #c1c2c4;          /* card/panel background — pure white */
+  --bg-panel-alt: #aba8a8;          /* inner card / table row alt */
+  --bg-header:    #b1b4b7;
  
   /* Borders */
-  --border:       #d1d5db;
-  --border-hover: #9ca3af;
+  --border:       #454545;
+  --border-hover: #282828;
  
   /* Brand accent — electric teal kept for continuity */
   --primary:      #0ea5e9;          /* sky blue — professional & energetic */
@@ -279,6 +279,23 @@ body {
   position: relative;
   overflow: hidden;
 }
+
+.kpi-card, .panel {
+  /* ไล่สีจากเข้มไปสว่างเล็กน้อย */
+  background: linear-gradient(145deg, #f1f5f9, #ffffff) !important;
+  border: 1.5px solid var(--border) !important;
+  
+  /* เพิ่มเงาเพื่อให้ Card ลอยเด่นขึ้นมา */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+}
+
+/* เมื่อ Hover ให้ขอบชัดขึ้นและเงาหนาขึ้น */
+.kpi-card:hover {
+  border-color: var(--border-hover) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
  
 /* Subtle top-bar accent line */
 .kpi-card::before {
