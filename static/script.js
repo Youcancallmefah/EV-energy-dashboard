@@ -242,7 +242,7 @@ function buildChart(data) {
     datasets: [{
       label: "Usage (kWh)",
       data: values,
-      borderColor: "#22d3a5",
+      borderColor: "#018c36",//#22d3a5
       backgroundColor: grad,
       pointBackgroundColor: pointColors,
       pointBorderColor: "#0f172a",
