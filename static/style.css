@@ -17,7 +17,7 @@ Copy
   --bg-header:    #b1b4b7;
  
   /* Borders */
-  --border:       #454545;
+  --border:       #323232;
   --border-hover: #282828;
  
   /* Brand accent — electric teal kept for continuity */
@@ -74,7 +74,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 200;
-  background: rgba(15, 23, 42, 0.88);
+  background: #a3a3a4;
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
 }
@@ -535,8 +535,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  background: var(--red-dim);
-  color: var(--red);
+  background-color: var(--red-mid);
+  color: var(--txt-inv);
   border: 1.5px solid rgba(239,68,68,0.25);
 }
  
