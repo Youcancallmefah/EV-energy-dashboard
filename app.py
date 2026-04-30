@@ -26,7 +26,7 @@ CORS(app)  # Allow cross-origin requests from the frontend
 
 DB_PATH        = "energy.db"
 START_DATE     = date(2026, 1, 1)   # Dataset start date
-HIGH_THRESHOLD = 180                # kWh — above this is flagged "high"
+HIGH_THRESHOLD = 200                # kWh — above this is flagged "high"
 
 
 # ── Data Generator ─────────────────────────────────────────
