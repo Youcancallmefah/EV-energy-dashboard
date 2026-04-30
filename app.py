@@ -14,7 +14,7 @@ Run:
 API available at: http://127.0.0.1:5000
 """
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 from flask_cors import CORS
 import sqlite3
 import random
@@ -139,6 +139,12 @@ def health():
         "threshold": HIGH_THRESHOLD
     })
 
+# --- เพิ่มโค้ด 3 บรรทัดนี้ลงไปตรงนี้เลยครับ ---
+@app.route("/")
+def index():
+    """Route สำหรับแสดงหน้า Dashboard (index.html)"""
+    return render_template("index.html")
+# ---------------------------------------
 
 # ── Entry Point ────────────────────────────────────────────
 
