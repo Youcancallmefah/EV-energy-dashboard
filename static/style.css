@@ -10,15 +10,15 @@ Copy
 /* ── Variables ──────────────────────────────────────── */
 :root {
   /* Core backgrounds */
-  --bg:           #f0f4f8;          /* page background — cool light grey */
-  --bg-2:         #e8edf3;
-  --bg-panel:     #ffffff;          /* card/panel background — pure white */
-  --bg-panel-alt: #f7f9fc;          /* inner card / table row alt */
-  --bg-header:    rgba(255,255,255,0.92);
+  --bg:           #ffffff;          /* page background — cool light grey */
+  --bg-2:         #e5e5e5;
+  --bg-panel:     #cccccc;          /* card/panel background — pure white */
+  --bg-panel-alt: #b2b2b2;          /* inner card / table row alt */
+  --bg-header:    #999999;
  
   /* Borders */
-  --border:       #e2e8f0;
-  --border-hover: #cbd5e1;
+  --border:       #7f7f7f;
+  --border-hover: #333333;
  
   /* Brand accent — electric teal kept for continuity */
   --primary:      #0ea5e9;          /* sky blue — professional & energetic */
