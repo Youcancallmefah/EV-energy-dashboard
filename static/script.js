@@ -11,7 +11,7 @@
  */
 
 // ── Config ──────────────────────────────────────────────
-const API_URL        = "http://127.0.0.1:5000/api/energy";
+const API_URL        = "/api/energy";
 const REFRESH_MS     = 10_000;    // ① FEATURE: refresh every 10 seconds
 const HIGH_THRESHOLD = 180;       // kWh — must match backend
 const WARN_THRESHOLD = 150;       // ② FEATURE: warning level threshold
